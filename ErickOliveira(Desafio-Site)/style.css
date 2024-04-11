@@ -1,0 +1,341 @@
+/*Estilização referente à página de início */
+
+.pagina-de-inicio{
+    background-color: rgb(141, 213, 64);
+}
+
+.principal {
+    text-align: center;
+    text-decoration: double;
+    font-size: 2.5rem;
+    color: rgb(202, 33, 33);
+    margin-left: 2%;
+    background-color: rgb(73, 73, 223);
+    width: 35%;
+    border-style: groove;
+    border-color: blue;
+    border-radius: 20px;
+    border-width: 10px;
+    min-width: 300px;
+}
+
+.estilo{  
+    margin-left: 2%;
+    margin-right: 2%;  
+    padding: 10px;
+    border-style: groove;
+    border-color: blue;
+    border-radius: 20px;
+    border-width: 15px;
+    display: inline-flex;
+}
+
+.destaque { 
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-left: auto;
+    min-width: 200px;
+    width: 40%;
+    height: 80%;
+    border-style: dashed;
+    border-color: green;
+    border-radius: 60px;
+    background-color: yellow;
+    text-align: center;
+    font-size: 2.2rem;
+    color: blue;
+       
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    font-size: 1.8rem;
+    color: blue;
+    padding: 5%;
+}
+
+.estilo1 {
+    display: inline-block;
+}
+
+.estilo2 {
+    border-style: double;
+    border-color: red;
+    border-radius: 10px;
+    border-width: 5px;
+    margin-left: 20%;    
+    margin-bottom:20% ;
+    min-width: 200px;
+    background-color: rgb(218, 229, 201);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: green;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    text-align: center;
+}
+
+.titulo-serviços {
+    text-align: center;
+    color: blue;
+    font-size: 1.5rem;
+}
+
+#menu li:hover{
+    color: #ff5500;
+    background-color: #00aaff;
+    border-radius: 30px;
+}
+
+#serviços{
+    margin-left: 20%;
+    margin-bottom: 20%;
+    background-color: #48b9af;
+    color: rgb(90, 47, 182);
+    font-size: 1.5rem;
+    border-color: #1f7914;
+    border-radius: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+#serviços:hover{
+    background-color: rgb(233, 103, 56);
+    color: #11390c;
+}
+.estilo3 {
+    float: right;
+    margin-right: 5%;
+    border-style: double;
+    border-color: red;
+    border-radius: 10px;
+    border-width: 5px;
+    padding: 1%;
+    background-color: aqua;
+   
+}
+
+/*Estilização das páginas secundárias */
+
+.pagina-secundária{
+    background-color: rgb(186, 215, 213);
+}
+
+.título {
+    text-decoration: double;
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(202, 33, 33);
+    margin-left: 2%;
+    background-color: rgb(73, 73, 223);
+    width: 35%;
+    min-width: 300px;
+    border-style: groove;
+    border-color: blue;
+    border-radius: 20px;
+    border-width: 10px;
+}
+
+.título2 {
+    text-decoration: double;
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(202, 33, 33);
+    margin-left: 2%;
+    background-color: rgb(73, 73, 223);
+    width: 65%;
+    min-width: 300px;
+    border-style: groove;
+    border-color: blue;
+    border-radius: 20px;
+    border-width: 10px;
+}
+
+.conteúdo {
+    margin-left: 2%;
+    margin-right: 2%;   
+    padding: 3%;
+    border-style: groove;
+    border-color: blue;
+    border-radius: 20px;
+    border-width: 15px;
+    display: inline-flexbox;
+}
+
+.conteúdo p {
+    font-size: 2rem;
+    color: rgb(14, 93, 152);
+}
+.conteúdo ul {
+    font-size: 1.3rem;
+    color: #1f7914;
+    line-height: 2rem;
+}
+
+.rodapé {
+    font-style: italic;
+    color: rgb(71, 71, 188);
+    margin-left: 2%;
+}
+
+/*Estilização para telas com largura máxima de 768 px*/
+
+@media screen and (max-width:950px) {
+    /*Estilização referente à página principal(primeira página)*/
+    .principal{
+        width: 92%;
+    } 
+    .destaque{
+        margin: 5% 10%;
+        width: 80%;
+    } 
+    .estilo1{
+        display: inline;    
+    } 
+    .estilo2{
+        margin-bottom: 5%;
+        margin-left: 2%;
+    }  
+    .estilo3 {
+        margin-left: 2%;
+        margin-bottom: 2%;
+    } 
+    #serviços{
+        margin-bottom: 5%;
+        margin-left: 2%;
+    }
+   
+    /*Estilização referente as páginas secundárias*/
+    .título{
+        width: 92%;
+        font-size: 2.2rem;
+    }
+
+    .título2{
+        width: 92%;
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .estilo3{
+        text-align: center;
+        background-color: rgb(0, 81, 157);
+    }  
+}
+
+/*Estilização do botão de seleção do modo claro/escuro*/
+body{
+    transition: background 0.5s linear, color 0.5s linear;
+}
+
+.botãoseletor {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.trilho{
+    width: 45px;
+    height: 20px;
+    background-color: #6673c5;
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+}
+
+.trilho .indicador{
+    width: 20px;
+    height: 20px;
+    background-color: #252525;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.trilho.dark{
+    background-color: #c3c3c3;
+}
+
+.trilho.dark .indicador{
+    left: 25px;
+    background-color: #fff;
+}
+
+body.dark{
+    background-color: #131212;
+}
+
+.botões-estilo{ 
+    margin-top: 2%; 
+    height:10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link{
+    background-color: #cf4cd1;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 8px #fc06065c;
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.link i{
+    transition: .2s;
+}
+
+.link:hover i{
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.link-1{
+    color: #ff5500;
+}
+
+.link-2{
+    color: #00aaff;
+}
+
+.link::before{
+    content: "";
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    position: absolute;
+    left: -80px;
+    top: 100%;
+    background-color: #eeff00f6;
+}
+
+.link:hover::before{
+    animation: desloca .5s;
+    left: 0;
+    top: 0;
+}
+
+@keyframes desloca {
+    0%{
+        left: -80px;
+        top: 100%;
+    }
+    50%{
+        left: 15%;
+        top: -25%;
+    }
+    100%{
+        left: 0;
+        top: 0;
+    }
+}
